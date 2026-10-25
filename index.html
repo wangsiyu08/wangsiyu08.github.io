@@ -1,8 +1,8 @@
-html lang="zh-CN">
+  <html lang="en">
  <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>王司渝｜个人主页</title>
+     <title>王司渝｜Personal Homepage</title>
      <style>
          * {
              margin: 0;
@@ -10,7 +10,7 @@ html lang="zh-CN">
              box-sizing: border-box;
          }
          body {
-             font-family: "Microsoft Yahei", sans-serif;
+             font-family: "Segoe UI", sans-serif;
              background-color: #f3f6fa;
              color: #333;
              line-height: 1.8;
@@ -34,17 +34,30 @@ html lang="zh-CN">
              margin: 0 auto;
              padding: 45px 25px;
          }
+         .avatar-wrap {
+             text-align: center;
+             margin-bottom: 40px;
+         }
+         .avatar {
+             width: 220px;
+             height: 280px;
+             object-fit: cover;
+             border-radius: 20px;
+             box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+         }
+         .chinese-name {
+             font-family: "Microsoft Yahei", sans-serif;
+             font-size: 40px;
+             margin-top: 20px;
+             color: #222;
+             font-weight: bold;
+         }
          section {
              background: #ffffff;
              padding: 36px;
              border-radius: 16px;
              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
              margin-bottom: 32px;
-         }
-         h1 {
-             font-size: 34px;
-             color: #222;
-             margin-bottom: 12px;
          }
          h2 {
              font-size: 24px;
@@ -70,51 +83,56 @@ html lang="zh-CN">
  </head>
  <body>
      <nav>
-         <a href=" ">关于我</a >
-         <a href="#education">求学经历</a >
-         <a href="#major">专业介绍</a >
-         <a href="#hobby">兴趣爱好</a >
-         <a href="#campus">校园任职</a >
-         <a href="#plan">未来规划</a >
+         <a href=" ">About Me</a >
+         <a href="#education">Education</a >
+         <a href="#major">Major</a >
+         <a href="#hobby">Hobbies</a >
+         <a href="#campus">Campus Experience</a >
+         <a href="#plan">Future Plans</a >
      </nav>
      <div class="container">
+         <div class="avatar-wrap">
+             < img class="avatar" src="avatar.jpg" alt="Avatar">
+             <div class="chinese-name">王司渝</div>
+         </div>
          <section id="about">
-             <h2>关于我</h2>
-             <p>您好！我是王司渝，出生于 2008 年 11 月 30 日，来自中国大陆，江西省上饶市广丰区。我始终保持踏实严谨的态度对待学业，热爱运动与阅读，在充实的校园生活中持续锻炼自我，不断拓宽自身的知识边界。</p >
+             <h2>About Me</h2>
+             <p>Hello! I was born on November 30, 2008. I come from Guangfeng District, Shangrao City, Jiangxi Province, China. I maintain a rigorous and earnest attitude toward academic work. I am passionate about sports and reading. During my colorful college life, I keep challenging myself and continuously broaden my knowledge boundaries.</p >
          </section>
          <section id="education">
-             <h2>求学经历</h2>
+             <h2>Education</h2>
              <ul>
-                 <li>幼儿园：福娃幼儿园</li>
-                 <li>小学：北门小学</li>
-                 <li>初中：永丰中学</li>
-                 <li>高中：贞白中学</li>
-                 <li>本科：应急管理大学，地震工程与建筑安全管理学院，水利水电工程专业</li>
+                 <li>Kindergarten: Fuwa Kindergarten</li>
+                 <li>Primary School: Beimen Primary School</li>
+                 <li>Junior High School: Yongfeng Middle School</li>
+                 <li>Senior High School: Zhenbai High School</li>
+                 <li>Undergraduate: University of Emergency Management. Major in Water Conservancy and Hydropower Engineering, School of Earthquake Engineering and Building Safety Management</li>
              </ul>
          </section>
          <section id="major">
-             <h2>专业介绍</h2>
-             <p>我就读的水利水电工程专业，依托学院在地震工程、防灾减灾领域深厚的学科积淀，兼具水利工程与防灾安全两大方向的特色。</p >
+             <h2>Major Introduction</h2>
+             <p>The Water Conservancy and Hydropower Engineering program benefits from the profound academic foundation of our school in earthquake engineering and disaster prevention and mitigation. This discipline combines traditional hydraulic engineering with safety and emergency research.</p >
              <ul>
-                 <li><strong>学科特色：</strong> 本专业除了学习传统水利枢纽、水工建筑物、水文水资源相关知识之外，重点结合抗震、防灾减灾相关内容，研究水工结构抵御地震与各类灾害的理论与技术。</li>
-                 <li><strong>专业优势：</strong> 依托应急管理方向的学科资源，注重工程安全、灾害防控，理论教学与工程实践并重，培养既懂水利工程，又具备灾害应急、工程安全评估能力的复合型人才，行业需求广泛。</li>
+                 <li><strong>Features:</strong> Besides the core courses for hydraulic structures, hydrology and water resources, this major focuses on seismic resistance, disaster prevention and related theories, exploring how hydraulic infrastructure withstands earthquakes and various natural hazards.</li>
+                 <li><strong>Advantages:</strong> Supported by strong emergency-related academic resources, our program balances theoretical learning and practical engineering training. We cultivate versatile professionals with solid knowledge of hydraulic engineering, disaster emergency response and structural safety assessment. Graduates can find plenty of opportunities across relevant industries.</li>
              </ul>
          </section>
          <section id="hobby">
-             <h2>兴趣爱好</h2>
-             <p>我的主要爱好为足球与阅读。足球教会我团队协作、坚持拼搏；阅读可以沉淀内心，拓展视野，汲取各个领域的知识。二者一动一静，平衡我的日常学习与生活。</p >
+             <h2>Hobbies</h2>
+             <p>I love football and reading. Football teaches me teamwork, perseverance and the spirit of never giving up. Reading calms my mind and expands my horizons, helping me absorb knowledge from different fields. Dynamic sports and quiet reading perfectly balance my daily study and life.</p >
          </section>
          <section id="campus">
-             <h2>校园任职</h2>
+             <h2>Campus Experience</h2>
              <ul>
-                 <li>地震工程与建筑安全管理学院足球队，4 号队员</li>
-                 <li>地震工程与建筑安全管理学院院学生会，学习部、组织部部员</li>
-                 <li>应急管理大学数学建模协会会员</li>
+                 <li>No. 4 Player, Football Team of the School of Earthquake Engineering and Building Safety Management</li>
+                 <li>Member, Study Department & Organization Department, Student Union of the School of Earthquake Engineering and Building Safety Management</li>
+                 <li>Member, Mathematical Modeling Association of University of Emergency Management</li>
              </ul>
          </section>
          <section id="plan">
-             <h2>未来规划</h2>
-             <p>现阶段，我的长远学习目标是考研。我希望充分利用宝贵的大学时光，积极参与各类学科竞赛、学生工作与实践项目，持续锻炼，积累实践经验，全方位提升个人综合能力，向着目标稳步前行。</p >
+             <h2>Future Plans</h2>
+             <p>My long‑term academic goal is to pursue postgraduate studies. I will fully take advantage of every precious moment in college. I plan to actively participate in academic competitions, student affairs, engineering practices and various research projects. I will continuously enrich my professional knowledge, sharpen my engineering thinking, and accumulate valuable practical experience.</p >
+             <p>In the years ahead, I hope to deepen my expertise in water conservancy, disaster reduction and structural safety. I will strive to improve my comprehensive capabilities step by step, and dedicate myself to engineering construction, disaster prevention and public safety related fields.</p >
          </section>
      </div>
  </body>
