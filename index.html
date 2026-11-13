@@ -1,152 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>王司渝｜Personal Homepage</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth; /* 锚点跳转平滑滚动 */
-        }
-        body {
-            font-family: "Segoe UI", sans-serif;
-            background-color: #f3f6fa;
-            color: #333;
-            line-height: 1.8;
-        }
-        nav {
-            background-color: #2c3e50;
-            padding: 18px 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 14px;
-            font-size: 16px;
-        }
-        nav a:hover {
-            color: #48a9e6;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 45px 25px;
-        }
-        .avatar-wrap {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .avatar {
-            width: 220px;
-            height: 280px;
-            object-fit: cover;
-            border-radius: 20px;
-            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
-        }
-        .chinese-name {
-            font-family: "Microsoft Yahei", sans-serif;
-            font-size: 40px;
-            margin-top: 20px;
-            color: #222;
-            font-weight: bold;
-        }
-        section {
-            background: #ffffff;
-            padding: 36px;
-            border-radius: 16px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-            margin-bottom: 32px;
-        }
-        h2 {
-            font-size: 24px;
-            color: #2c3e50;
-            border-left: 5px solid #48a9e6;
-            padding-left: 16px;
-            margin-bottom: 22px;
-        }
-        p {
-            font-size: 17px;
-            color: #505050;
-            margin-bottom: 16px;
-        }
-        ul {
-            padding-left: 24px;
-            font-size: 17px;
-            color: #505050;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wang Siyu | Homepage</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23186b48'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='26' fill='%23ffffff'%3EWS%3C/text%3E%3C/svg%3E">
 </head>
 <body>
+
+<header>
+    <div class="brand">王司渝的个人主页<small>Wang Siyu · Personal Homepage</small></div>
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#major">Major</a>
-        <a href="#hobby">Hobbies</a>
-        <a href="#campus">Campus Experience</a>
-        <a href="#plan">Future Plans</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="education.html">Education</a>
+        <a href="major.html">Major</a>
+        <a href="hobby.html">Hobbies</a>
+        <a href="campus.html">Campus Experience</a>
+        <a href="plan.html">Future Plans</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <div class="container">
-        <div class="avatar-wrap">
-            <img class="avatar" src="avatar.png" alt="Avatar">
-            <div class="chinese-name">王司渝</div>
+</header>
+
+<!-- 头像与姓名 -->
+<div class="hero">
+    <img src="avatar.png" alt="Wang Siyu" class="avatar"
+         onerror="this.style.display='none';document.getElementById('avfb').style.display='flex';">
+    <div class="avatar-fallback" id="avfb">WS</div>
+    <h1 class="name">王司渝</h1>
+    <div class="name-en">Wang Siyu</div>
+    <div class="tag">Hydropower Engineering · University of Emergency Management</div>
+    <div class="tag-sub">Shangrao, Jiangxi · Hebei, China</div>
+</div>
+
+<div class="wrap">
+
+    <div class="card">
+        <div class="sec-head"><span class="sec-no">01</span><h2>About Me</h2></div>
+        <p class="lead">My name is <span class="hl">Wang Siyu</span>. I was born on <span class="hl">30 November 2008</span>
+        in Shangrao, a city in the southeast of China's Jiangxi Province. I finished all of my
+        schooling before university in Jiangxi, and I am now studying in <span class="hl">Hebei</span>,
+        majoring in <span class="hl">Hydropower Engineering</span> at the
+        School of Earthquake Engineering and Building Safety.</p>
+
+        <div class="facts">
+            <div class="fact"><div class="k">Born</div><div class="v">30 November 2008</div></div>
+            <div class="fact"><div class="k">Hometown</div><div class="v">Shangrao, Jiangxi</div></div>
+            <div class="fact"><div class="k">Currently</div><div class="v">Hebei, China</div></div>
+            <div class="fact"><div class="k">Major</div><div class="v">Hydropower Engineering</div></div>
+            <div class="fact"><div class="k">On the Pitch</div><div class="v">Full-back / Centre forward</div></div>
+            <div class="fact"><div class="k">Music</div><div class="v">Pop and R&amp;B</div></div>
         </div>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I was born on November 30, 2008. I come from Guangfeng District, Shangrao City, Jiangxi Province, China. I maintain a rigorous and earnest attitude toward academic work. I am passionate about sports and reading. During my colorful college life, I keep challenging myself and continuously broaden my knowledge boundaries.</p>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>Kindergarten: Fuwa Kindergarten</li>
-                <li>Primary School: Beimen Primary School</li>
-                <li>Junior High School: Yongfeng Middle School</li>
-                <li>Senior High School: Zhenbai High School</li>
-                <li>Undergraduate: University of Emergency Management. Major in Water Conservancy and Hydropower Engineering, School of Earthquake Engineering and Building Safety Management</li>
-            </ul>
-        </section>
-
-        <section id="major">
-            <h2>Major Introduction</h2>
-            <p>The Water Conservancy and Hydropower Engineering program benefits from the profound academic foundation of our school in earthquake engineering and disaster prevention and mitigation. This discipline combines traditional hydraulic engineering with safety and emergency research.</p>
-            <ul>
-                <li><strong>Features:</strong> Besides the core courses for hydraulic structures, hydrology and water resources, this major focuses on seismic resistance, disaster prevention and related theories, exploring how hydraulic infrastructure withstands earthquakes and various natural hazards.</li>
-                <li><strong>Advantages:</strong> Supported by strong emergency-related academic resources, our program balances theoretical learning and practical engineering training. We cultivate versatile professionals with solid knowledge of hydraulic engineering, disaster emergency response and structural safety assessment. Graduates can find plenty of opportunities across relevant industries.</li>
-            </ul>
-        </section>
-
-        <section id="hobby">
-            <h2>Hobbies</h2>
-            <p>I love football and reading. Football teaches me teamwork, perseverance and the spirit of never giving up. Reading calms my mind and expands my horizons, helping me absorb knowledge from different fields. Dynamic sports and quiet reading perfectly balance my daily study and life.</p>
-        </section>
-
-        <section id="campus">
-            <h2>Campus Experience</h2>
-            <ul>
-                <li>No. 4 Player, Football Team of the School of Earthquake Engineering and Building Safety Management</li>
-                <li>Member, Study Department & Organization Department, Student Union of the School of Earthquake Engineering and Building Safety Management</li>
-                <li>Member, Mathematical Modeling Association of University of Emergency Management</li>
-            </ul>
-        </section>
-
-        <section id="plan">
-            <h2>Future Plans</h2>
-            <p>My long‑term academic goal is to pursue postgraduate studies. I will fully take advantage of every precious moment in college. I plan to actively participate in academic competitions, student affairs, engineering practices and various research projects. I will continuously enrich my professional knowledge, sharpen my engineering thinking, and accumulate valuable practical experience.</p>
-            <p>In the years ahead, I hope to deepen my expertise in water conservancy, disaster reduction and structural safety. I will strive to improve my comprehensive capabilities step by step, and dedicate myself to engineering construction, disaster prevention and public safety related fields.</p>
-        </section>
     </div>
+
+    <div class="card">
+        <div class="sec-head"><span class="sec-no">02</span><h2>Personality and Interests</h2></div>
+        <p>People usually describe me as <span class="hl">cheerful, outgoing and humorous</span>. I like a room
+        where people are talking and laughing, and I try to be the one who keeps it that way.</p>
+        <p>When I am reading for myself, I lean towards <span class="hl">history and military books</span>.
+        Alongside that I read a wide range of Japanese manga and watch a good deal of anime — one title I keep
+        coming back to is <span class="hl">Neon Genesis Evangelion</span>.</p>
+        <p>Writing has stayed with me as well. It is the quiet counterpart of football: one is loud and fast,
+        the other is slow, private, and a way of putting my thoughts in order.</p>
+    </div>
+
+    <div class="card">
+        <div class="sec-head"><span class="sec-no">03</span><h2>Football</h2></div>
+        <p>Football is the part of my week I look forward to most. In my university team I play as a
+        <span class="hl">full-back</span> and, depending on how the game is going, as a
+        <span class="hl">centre forward</span>.</p>
+        <p>Full-back is my natural position: you defend the flank, then join the attack at the exact moment
+        the ball turns — a job that asks for stamina, timing and a willingness to run the whole touchline.</p>
+        <p>My favourite player is <span class="hl">Dani Alves</span>, the Brazilian right-back. He is the reason
+        I first paid attention to the position: a defender who plays like a playmaker, and who kept doing it
+        at the top level for far longer than anyone expected.</p>
+    </div>
+
+    <div class="card">
+        <div class="sec-head"><span class="sec-no">04</span><h2>Music, Travel and the Wider World</h2></div>
+        <p>I listen to a lot of music, mostly <span class="hl">pop and R&amp;B</span>. For me music and travel
+        are two of the genuinely essential things in a life — one changes your mood in three minutes, the other
+        changes your sense of how large the world is.</p>
+        <p>Before I turned eighteen I had already been to a good number of places:
+        <span class="hl">Inner Mongolia, Liaoning, Hebei, Shandong, Anhui, Zhejiang and Jiangsu</span>,
+        as well as Shanghai and Beijing. The ones that stayed with me most are
+        <span class="hl">Shenyang, Qingdao, Shanghai and Beijing</span> — the old industrial weight of the
+        northeast, the sea air of the Shandong coast, and the sheer scale of the two biggest cities.</p>
+        <p class="quote">There is still a long list of places I want to see. For now: thank you for reading,
+        and I hope you will like me.</p>
+    </div>
+
+</div>
+
+<footer>
+    <div class="mono">WS</div>
+    <div class="fname">王司渝 · Wang Siyu</div>
+    <div class="fsub">Personal Homepage</div>
+</footer>
+
 </body>
 </html>
